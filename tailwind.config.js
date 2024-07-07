@@ -11,7 +11,16 @@ const {
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "blue": {
+          bg: "#0F1437",
+          bgDark: "#080D51",
+          border: "#194EEF",
+          lightLine:"#7BE5E1",
+        }
+      }
+    },
   },
   plugins: [
     addVariablesForColors,
