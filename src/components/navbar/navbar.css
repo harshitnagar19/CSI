@@ -1,0 +1,9 @@
+.csi-logo-div{
+    height: 30px;
+    /* width: 20%; */
+}
+.csi-logo-div img{
+    height: 100%;
+    padding-right: 10px;
+    /* width: 100%; */
+}
