@@ -2,6 +2,7 @@ import React from 'react'
 import { Fade } from "react-awesome-reveal";
 import PastEvents from './PastEvents';
 import AboutCollege from './AboutCollege';
+import UpcomingEvents from './UpcomingEventa';
 function Home() {
     return (
         <div className='bg-blue-bg text-white px-3 sm:px-5 md:px-10'>
@@ -10,6 +11,7 @@ function Home() {
             </Fade>
             <AboutCollege />
             <PastEvents />
+            <UpcomingEvents />
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { winners } from "../data/winners";
 import { otherEvents } from "../data/other-events";
+import SectionDividerLine from './SectionDividerLine';
 
 const Card = ({ image, name, position, domain }) => (
   <div className="border-[#194EEF] rounded-3xl border-4 flex flex-col items-center w-full sm:w-[250px] lg:w-[300px] aspect-[3/4] overflow-hidden">
@@ -40,6 +41,9 @@ export default function PastEvents() {
           ))}
         </div>
       </div>
+      <SectionDividerLine/>
+
+      {/* Other Events */}
 
       <div className="mb-8">
         <h2 className="text-2xl lg:text-4xl font-mono mb-4">Other Events</h2>
@@ -53,7 +57,9 @@ export default function PastEvents() {
             View More
           </button>
         </div>
+        <SectionDividerLine/>
       </div>
+      
     </div>
   );
 }

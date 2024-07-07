@@ -1,5 +1,6 @@
 import React from "react";
 import clgImg from "../data/college-image.svg";
+import SectionDividerLine from "./SectionDividerLine";
 
 export default function AboutCollege() {
   return (
@@ -26,6 +27,7 @@ export default function AboutCollege() {
           </p>
         </div>
       </div>
+      <SectionDividerLine />
     </div>
   );
 }
