@@ -4,7 +4,6 @@ import Hero from './heroSection/Hero';
 import PastEvents from "./PastEvents";
 import AboutCollege from "./AboutCollege";
 import UpcomingEvents from "./UpcomingEventa";
-import Hero from "./heroSection/Hero";
 function Home() {
     return (
         <div>
