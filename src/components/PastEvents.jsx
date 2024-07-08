@@ -4,7 +4,7 @@ import { otherEvents } from "../data/other-events";
 import SectionDividerLine from './SectionDividerLine';
 
 const Card = ({ image, name, position, domain }) => (
-  <div className="border-[#194EEF] rounded-3xl border-4 flex flex-col items-center w-full sm:w-[250px] lg:w-[300px] aspect-[3/4] overflow-hidden">
+  <div className=" rounded-3xl border-4 flex flex-col items-center w-full sm:w-[250px] lg:w-[300px] aspect-[3/4] overflow-hidden">
     <img
       src={image}
       alt={name}
