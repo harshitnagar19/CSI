@@ -21,7 +21,7 @@ const UpcomingEvents = () => {
       <h2 className="text-2xl lg:text-4xl font-mono mb-8">Upcoming Events</h2>
       <div className="flex flex-col md:flex-row gap-8 items-center justify-center">
         <div className="md:w-1/3">
-          <div className="border-[#194EEF] rounded-3xl border-4 overflow-hidden mb-6">
+          <div className="rounded-3xl border-4 overflow-hidden mb-6">
             <img
               src={codejamImg}
               alt="Computer guy coding"
