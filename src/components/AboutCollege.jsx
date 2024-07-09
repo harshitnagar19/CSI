@@ -4,7 +4,7 @@ import SectionDividerLine from "./SectionDividerLine";
 
 export default function AboutCollege() {
   return (
-    <div className=" w-10/12 mx-auto flex flex-col items-center gap-8 min-h-screen ">
+    <div className=" w-10/12 mx-auto flex flex-col items-center gap-8 min-h-screen text-white">
       <h1 className={`font-extrabold text-4xl`}>About college</h1>
       <div className="flex gap-x-20 justify-center items-center flex-wrap">
         <div className="w-full sm:w-[45%] mb-4 border-8 overflow-hidden  rounded-3xl mt-2 ">

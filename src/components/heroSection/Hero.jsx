@@ -1,13 +1,29 @@
 "use client";
-import React from 'react'
+import React, { useState } from 'react'
 import { HeroParallax } from "../../ui/hero-parallax";
 import "./hero.css";
 import { Navbar } from '../navbar/Navbar';
 function Hero() {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = (e) => {
+    const { scrollTop, scrollHeight, clientHeight } = e.target;
+    const position = Math.ceil(
+        (scrollTop / (scrollHeight - clientHeight)) * 100
+    );
+    setScrollPosition(position);
+    console.log(scrollPosition)
+};
+
   return (
-<div className='hero-class'>
+<div 
+onScroll={handleScroll}
+className={'hero-class'}
+>
     <Navbar/>
-    <HeroParallax products={products} />
+    <HeroParallax products={products} 
+    
+    />
     </div>
   )
 }

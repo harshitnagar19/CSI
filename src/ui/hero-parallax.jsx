@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState ,useEffect } from "react";
 import {
   motion,
   useScroll,
@@ -16,6 +16,7 @@ export const HeroParallax = ({
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
+  const [bgClass , setBgClass] = useState("bg-black")
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -48,10 +49,21 @@ export const HeroParallax = ({
     useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
     springConfig
   );
+  useEffect(() => {
+    const unsubscribe = scrollYProgress.onChange((latest) => {
+      const scrollDistance = latest * ref.current.offsetHeight;
+      if (scrollDistance >= 500) {
+        setBgClass(" ");
+      } else {
+        setBgClass("bg-black");
+      }
+    });
+    return () => unsubscribe();
+  }, [scrollYProgress]);
   return (
     <div
       ref={ref}
-      className="h-[300vh]  overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className={`${bgClass} h-[300vh]  overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]`}
     >
       <Header />
       <motion.div
