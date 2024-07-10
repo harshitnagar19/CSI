@@ -18,6 +18,7 @@ module.exports = {
           bgDark: "#080D51",
           border: "#194EEF",
           lightLine:"#7BE5E1",
+          primary: '#823ae0'
         }
       }
     },
