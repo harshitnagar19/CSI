@@ -4,7 +4,7 @@ import { otherEvents } from "../data/other-events";
 import SectionDividerLine from './SectionDividerLine';
 
 const Card = ({ image, name, position, domain }) => (
-  <div className=" rounded-3xl border-4 flex flex-col items-center w-full sm:w-[250px] lg:w-[300px] aspect-[3/4] overflow-hidden">
+  <div className="text-white rounded-3xl border-4 flex flex-col items-center w-full sm:w-[250px] lg:w-[300px] aspect-[3/4] overflow-hidden">
     <img
       src={image}
       alt={name}
@@ -20,7 +20,7 @@ const Card = ({ image, name, position, domain }) => (
 
 export default function PastEvents() {
   return (
-    <div className="min-h-screen px-4 py-8 max-w-7xl mx-auto">
+    <div className=" text-white min-h-screen py-8  mx-auto">
       <h1 className="text-3xl lg:text-5xl font-mono mb-8">Past Events</h1>
       
       <div className="mb-12">
