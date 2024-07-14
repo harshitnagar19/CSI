@@ -21,7 +21,10 @@ module.exports = {
           lightLine:"#7BE5E1",
           primary: '#823ae0'
         }
-      }
+      },
+      backgroundColor: {
+        'custom-gray': 'rgba(234, 234, 234, 0.51)',
+      },
     },
   },
   plugins: [

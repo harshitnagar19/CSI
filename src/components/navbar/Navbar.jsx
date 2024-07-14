@@ -19,7 +19,7 @@ function Navbarr({ className }) {
         <div
             className={cn("fixed top-10 inset-x-0 w-full z-50 ", className)}
         >
-            <Menu setActive={setActive} className="">
+            <Menu setActive={setActive} >
                <div className="flex items-center csi-logo-div "> <img src={logo} alt="" /><p>Computer Society Of India</p></div>
                <div className="w-2/3 flex justify-end gap-8 pr-8">
                 <MenuItem setActive={setActive} active={active} item="Home">

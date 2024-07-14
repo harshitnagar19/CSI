@@ -2,15 +2,17 @@ import React from "react";
 import { winners } from "../data/winners";
 import { otherEvents } from "../data/other-events";
 import SectionDividerLine from './SectionDividerLine';
+import Marquee from "react-fast-marquee";
+import "./pastEvent.css";
 // cards
 const Card = ({ image, name, position, domain }) => (
-  <div className="text-white rounded-3xl border-4 flex flex-col items-center w-full sm:w-[250px] lg:w-[300px] aspect-[3/4] overflow-hidden">
+  <div className="text-black rounded-3xl border-4 flex flex-col items-center w-full sm:w-[250px] lg:w-[300px] aspect-[3/4] overflow-hidden">
     <img
       src={image}
       alt={name}
       className="w-full h-[70%] object-cover"
     />
-    <div className="p-4 text-center w-full">
+    <div className="p-4 text-center w-full bg-white">
       <h3 className="text-xl lg:text-2xl font-semibold truncate">{name}</h3>
       {position && <p className="text-sm lg:text-base truncate">{position}</p>}
       {domain && <p className="text-sm lg:text-base truncate">{domain}</p>}
@@ -35,11 +37,26 @@ export default function PastEvents() {
 
       <div className="mb-12">
         <h2 className="text-2xl lg:text-4xl font-mono mb-4">Winners</h2>
-        <div className="flex flex-wrap justify-center gap-6">
+       
+        <Marquee
+         gradient={true}
+         gradientColor={"rgba(0,0,0,0.9)"}
+         gradientWidth={170}
+         className="rounded-3xl"
+         speed={80}
+        //  pauseOnHover={true}
+         pauseOnClick={true}
+         delay={0}
+         play={true}
+         direction="left"
+        >
+        <div className="flex gap-16 justify-around ">
           {winners.map((winner, index) => (
             <Card key={index} {...winner} />
           ))}
         </div>
+        </Marquee>
+        
       </div>
       <SectionDividerLine/>
 
