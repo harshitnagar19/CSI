@@ -1,3 +1,39 @@
 .winner-box-shadow{
     box-shadow:inset -10px 0 10px -5px black, inset 50px -15px 40px -5px black;
 }
+.card {
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    gap: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    border: solid 2px;
+    border-image: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% )1;
+  }
+  
+  .heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  
+  .card p:not(.heading) {
+    font-size: 14px;
+  }
+  
+  .card p:last-child {
+    color: #e81cff;
+    font-weight: 600;
+  }
+  
+
+ 
+  
