@@ -38,7 +38,7 @@ export default function AboutCollege() {
           </Zoom>
         </div>
         <Slide triggerOnce direction="right" duration="2000" className="flex justify-center">
-          <div className="relative px-12 w-[70%] md:h-screen w-fit flex items-center justify-center">
+          <div className="relative px-12 w-[70%] h-[50%] md:h-screen w-fit flex items-center justify-center">
             <DirectionAwareHover imageUrl={imageUrl} className="h-3/4 w-fit">
               <p className="font-bold text-xl">In the Indore</p>
               <p className="font-normal text-sm">$1299 / night</p>

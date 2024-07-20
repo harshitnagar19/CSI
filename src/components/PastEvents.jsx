@@ -12,22 +12,24 @@ const Card = ({ image, name, position, domain }) => (
     {position && <p >{position}</p>}
     {domain && <p >{domain}</p>}
   </div>
-  
+
 );
 
 export default function PastEvents() {
   return (
     <div className=" text-white min-h-screen py-8  mx-auto">
-      <h1 className="text-3xl lg:text-5xl font-mono mb-8">Past Events</h1>
+      <div className="px-9">
+        <h1 className="text-3xl lg:text-5xl font-mono mb-8">Past Events</h1>
 
-      <div className="mb-12">
-        <h2 className="text-2xl lg:text-4xl font-mono mb-4">Kaushal</h2>
-        <p className="text-sm lg:text-xl font-mono">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-          dolorem voluptas temporibus minus ut consequuntur molestias? Ut neque,
-          architecto nulla dolor commodi doloribus a debitis, quibusdam
-          repudiandae possimus blanditiis deserunt!
-        </p>
+        <div className="mb-12">
+          <h2 className="text-2xl lg:text-4xl font-mono mb-4">Kaushal</h2>
+          <p className="text-sm lg:text-xl font-mono">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
+            dolorem voluptas temporibus minus ut consequuntur molestias? Ut neque,
+            architecto nulla dolor commodi doloribus a debitis, quibusdam
+            repudiandae possimus blanditiis deserunt!
+          </p>
+        </div>
       </div>
 
       <div className="mb-12">
