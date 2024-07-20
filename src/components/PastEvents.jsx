@@ -64,11 +64,24 @@ export default function PastEvents() {
 
       <div className="mb-8">
         <h2 className="text-2xl lg:text-4xl font-mono mb-4">Other Events</h2>
+        <Marquee
+         gradient={true}
+         gradientColor={"rgba(0,0,0,0.9)"}
+         gradientWidth={170}
+         className="rounded-3xl"
+         speed={80}
+        //  pauseOnHover={true}
+         pauseOnClick={true}
+         delay={0}
+         play={true}
+         direction="right"
+        >
         <div className="flex flex-wrap justify-center gap-6 mb-6">
           {otherEvents.map((event, index) => (
             <Card key={index} {...event} />
           ))}
         </div>
+        </Marquee>
         <div className="flex justify-center">
           <button className="bg-[#194EEF] text-white py-2 px-6 rounded-full text-lg hover:bg-blue-700 transition duration-300">
             View More
