@@ -45,7 +45,7 @@ export default function PastEvents() {
           play={true}
           direction="left"
         >
-          <div className="flex gap-16 justify-around ">
+          <div className="flex  justify-between ">
             {winners.map((winner, index) => (
               <Card key={index} {...winner} />
             ))}
