@@ -14,7 +14,7 @@ export default function Team() {
   };
 
   return (
-    <div className='px-4 py-8 max-w-7xl mx-auto'>
+    <div className='px-4 py-8 max-w-7xl mx-auto text-white'>
       <h1 className="text-3xl lg:text-5xl font-mono mb-8">Team</h1>
       <div className="flex flex-wrap justify-center gap-6">
         {visibleCards.map((member, index) => (

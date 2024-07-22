@@ -18,10 +18,14 @@ module.exports = {
           bg: "#0F1437",
           bgDark: "#080D51",
           border: "#194EEF",
-          lightLine:"#7BE5E1",
-          primary: '#823ae0'
+          lightLine: "#7BE5E1",
+          primary: '#823ae0',
+        },
+        "purple": {
+          DEFAULT: '#823ae0',
         }
       },
+      
       backgroundColor: {
         'custom-gray': 'rgba(234, 234, 234, 0.51)',
       },
@@ -59,7 +63,7 @@ function addVariablesForColors({ addBase, theme }) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });

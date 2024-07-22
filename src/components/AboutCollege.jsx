@@ -23,7 +23,7 @@ export default function AboutCollege() {
       {/*  */}
       <div className="about-body ">
         <div className="about-description">
-          <Fade className="fade" direction="left" duration="1500"> <h1 className="about-college-title">About College</h1></Fade>
+          <Fade className="fade" direction="left" duration="1500"> <h1 className="text-purple">About College</h1></Fade>
           <Zoom >
             <p className='mb-5 text-white' >Shri Vaishnav Vidyapeeth Vishwavidyalaya</p>
 
