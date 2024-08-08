@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import { HeroParallax } from "../../ui/hero-parallax";
 import "./hero.css";
 import { Navbar } from '../navbar/Navbar';
+import { Element } from 'react-scroll';
+
 function Hero() {
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -16,15 +18,17 @@ function Hero() {
   };
 
   return (
-    <div
-      onScroll={handleScroll}
-      className={'hero-class'}
-    >
-      <Navbar />
-      <HeroParallax products={products}
+    <Element name='home'>
+      <div
+        onScroll={handleScroll}
+        className={'hero-class'}
+      >
+        <Navbar />
+        <HeroParallax products={products}
 
-      />
-    </div>
+        />
+      </div>
+    </Element>
   )
 }
 export const products = [

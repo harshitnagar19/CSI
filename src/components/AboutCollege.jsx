@@ -4,12 +4,14 @@ import SectionDividerLine from "./SectionDividerLine";
 import "./aboutcollege.css"
 import { Zoom, Fade, Slide } from "react-awesome-reveal";
 import { AnimatePresence, motion } from "framer-motion";
+import { Element } from "react-scroll";
 import { cn } from "../utils/cn";
 import { DirectionAwareHover } from "../ui/direction-aware-hover";
 export default function AboutCollege() {
   const imageUrl = clgImg;
   return (
-    <div className="pt-40 w-full mx-auto flex flex-col items-center gap-8 min-h-screen text-white">
+   <Element  name="aboutCollege">
+     <div className="pt-40 w-full mx-auto flex flex-col items-center gap-8 min-h-screen text-white">
       {/* style line */}
       <div className="about w-full h-3 ">
         <div className="line-styling">
@@ -62,5 +64,6 @@ export default function AboutCollege() {
 
       {/* style line end */}
     </div>
+   </Element>
   );
 }

@@ -1,6 +1,7 @@
 import { createContext ,useState } from 'react';
 import { BrowserRouter , Routes , Route } from 'react-router-dom';
 import Home from './components/Home';
+import AboutCollege from './components/AboutCollege';
 
 export const context = createContext(null);
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <BrowserRouter> 
       <Routes>
         <Route  path="/"  element={<Home/>}/>
+        {/* <Route  path="/AboutCollege"  element={<AboutCollege/>}/> */}
       {/* / <Route path="/" element={<context.Provider value={{cart , setCart}} ></context.Provider> }/> */}
       </Routes>
       </BrowserRouter>

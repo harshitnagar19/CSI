@@ -4,6 +4,7 @@ import SectionDividerLine from './SectionDividerLine';
 import { Upcomming } from '../data/other-events';
 import { Fade } from 'react-awesome-reveal';
 import "./upcomingevents.css"
+import { Element } from 'react-scroll';
 
 const EventCard = ({ date, description }) => (
     <div className="flex border-2 rounded-lg overflow-hidden mb-4 h-24">
@@ -19,7 +20,8 @@ const UpcomingEvents = () => {
   
 
   return (
-    <div className="min-h-screen px-4 py-8 max-w-7xl mx-auto">
+  <Element name='upcomingEvents'>
+      <div className="min-h-screen px-4 py-8 max-w-7xl mx-auto">
      <Fade className="fade flex justify-center pb-8" direction="up" duration="1000"> <h1 className="text-2xl lg:text-5xl font-mono mb-8 text-purple upcoming-event">Upcoming Events</h1></Fade>
       <div className="flex flex-col md:flex-row gap-8 items-center justify-center text-white">
         <div className="md:w-1/3">
@@ -46,6 +48,7 @@ const UpcomingEvents = () => {
       </div>
       <SectionDividerLine />
     </div>
+  </Element>
   );
 };
 

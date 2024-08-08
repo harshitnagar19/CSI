@@ -4,6 +4,7 @@ import { otherEvents } from "../data/other-events";
 import SectionDividerLine from './SectionDividerLine';
 import Marquee from "react-fast-marquee";
 import "./pastEvent.css";
+import { Element } from "react-scroll";
 // cards
 const Card = ({ image, name, position, domain }) => (
   <div class="card w-[200px] sm:w-[250px] lg:w-[300px] aspect-[3/4] ">
@@ -17,7 +18,8 @@ const Card = ({ image, name, position, domain }) => (
 
 export default function PastEvents() {
   return (
-    <div className=" text-white min-h-screen py-8  mx-auto">
+   <Element name="pastEvents">
+     <div className=" text-white min-h-screen py-8  mx-auto">
       <div className="px-9">
         <h1 className="text-3xl lg:text-5xl font-mono mb-8">Past Events</h1>
 
@@ -90,5 +92,6 @@ export default function PastEvents() {
       </div>
 
     </div>
+   </Element>
   );
 }

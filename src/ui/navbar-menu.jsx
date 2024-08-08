@@ -19,7 +19,12 @@ export const MenuItem = ({
   children,
 }) => {
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative ">
+    <div 
+    onMouseEnter={() => setActive(item)} 
+    // className={item=="Home"?"relative ml-0":"relative"}
+     className="relative "
+     >
+      
       <motion.p
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
@@ -61,7 +66,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full boder border-transparent dark:bg-black  dark:border-white/[0.2] bg-custom-gray backdrop-blur-lg shadow-input flex justify-between space-x-4 px-8 py-4 "
+      className="flex flex-col items-center  md:flex md:flex-row relative rounded-full boder border-transparent dark:bg-black  dark:border-white/[0.2]   justify-between  md:space-x-10 md:space-y-0 space-x-0 space-y-4 px-8 py-4 "
     >
       {/* bg-custom-gray */}
       {children}
