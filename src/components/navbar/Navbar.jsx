@@ -47,7 +47,7 @@ function Navbarr({ className }) {
            <Link to='aboutCollege' smooth={true} duration={500} ><MenuItem setActive={setActive} active={active} item="About"></MenuItem></Link>
            <Link to="upcomingEvents"smooth={true} duration={500}><MenuItem setActive={setActive} active={active} item="Upcoming Events"></MenuItem></Link> 
            <Link to="pastEvents"  smooth={true} duration={500}><MenuItem setActive={setActive} active={active} item="Past Events"></MenuItem>              </Link>
-            <MenuItem setActive={setActive} active={active} item="Contact Us"></MenuItem>
+            <Link to="footer" smooth={true} duration={500}><MenuItem setActive={setActive} active={active} item="Contact Us"></MenuItem></Link>
           </Menu>
         </div>
       </div>

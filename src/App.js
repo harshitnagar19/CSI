@@ -11,7 +11,6 @@ function App() {
       <BrowserRouter> 
       <Routes>
         <Route  path="/"  element={<Home/>}/>
-        {/* <Route  path="/AboutCollege"  element={<AboutCollege/>}/> */}
       {/* / <Route path="/" element={<context.Provider value={{cart , setCart}} ></context.Provider> }/> */}
       </Routes>
       </BrowserRouter>

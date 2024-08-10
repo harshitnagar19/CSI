@@ -5,6 +5,7 @@ import AboutCollege from "./AboutCollege";
 import UpcomingEvents from "./UpcomingEventa";
 import Team from "./Team";
 import { TracingBeam } from "../ui/tracing-beam";
+import Footer from "./footer/Footer";
 function Home() {
 
 
@@ -20,6 +21,7 @@ function Home() {
                 </TracingBeam>
                 <UpcomingEvents />
                 <Team />
+                <Footer/>
             </div>
         </div>
     )
