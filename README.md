@@ -5,3 +5,4 @@
 <!-- react-awesome-reveal used for animation-->
 <!-- .env file can contain URL or essential info -->
 <!-- for icons we use font awesome 4 -->
+<!-->
