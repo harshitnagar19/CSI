@@ -15,9 +15,9 @@ export default function AboutCollege() {
       {/* style line */}
       <div className="about w-full h-3 ">
         <div className="line-styling">
-          <div className="style-circle" ></div>
-          <div className="style-circle" ></div>
-          <div className="style-line" ></div>
+          <div className="style-circle bg-blue-500" ></div>
+          <div className="style-circle bg-blue-500" ></div>
+          <div className="style-line bg-blue-500" ></div>
         </div>
       </div>
       {/* style line end */}
@@ -25,7 +25,7 @@ export default function AboutCollege() {
       {/*  */}
       <div className="about-body ">
         <div className="about-description">
-          <Fade className="fade" direction="left" duration="1500"> <h1 className="text-purple">About College</h1></Fade>
+          <Fade className="fade" direction="left" duration="1500"> <h1 className="text-blue-500">About College</h1></Fade>
           <Zoom >
             <p className='mb-5 text-white' >Shri Vaishnav Vidyapeeth Vishwavidyalaya</p>
 
@@ -55,9 +55,9 @@ export default function AboutCollege() {
 
       <div className="about w-full h-3 ">
         <div className="line-styling">
-          <div className="style-circle" ></div>
-          <div className="style-circle" ></div>
-          <div className="style-line" ></div>
+          <div className="style-circle bg-blue-500" ></div>
+          <div className="style-circle bg-blue-500" ></div>
+          <div className="style-line bg-blue-500" ></div>
         </div>
       </div>
 

@@ -22,7 +22,7 @@ const UpcomingEvents = () => {
   return (
   <Element name='upcomingEvents'>
       <div className="min-h-screen px-4 py-8 max-w-7xl mx-auto">
-     <Fade className="fade flex justify-center pb-8" direction="up" duration="1000"> <h1 className="text-2xl lg:text-5xl font-mono mb-8 text-purple upcoming-event">Upcoming Events</h1></Fade>
+     <Fade className="fade flex justify-center pb-8" direction="up" duration="1000"> <h1 className="text-2xl lg:text-5xl font-mono mb-8 text-blue-500 upcoming-event">Upcoming Events</h1></Fade>
       <div className="flex flex-col md:flex-row gap-8 items-center justify-center text-white">
         <div className="md:w-1/3">
           <div className="rounded-3xl border-4 overflow-hidden mb-6">

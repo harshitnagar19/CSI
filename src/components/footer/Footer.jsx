@@ -64,7 +64,7 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className="footer-widget">
+                            {/* <div className="footer-widget">Ffind
                                 <div className="footer-widget-heading mb-10">
                                     <h3 className="text-white text-xl font-semibold">Useful Links</h3>
                                     <div className="w-12 h-1 bg-blue-500 mt-2"></div>

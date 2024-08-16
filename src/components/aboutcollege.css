@@ -21,13 +21,13 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #823ae0;
+  /* background-color: #823ae0; */
 }
 .about .line-styling .style-line{
   width: 95%;
   height: 5px;
   border-radius: 10px;
-  background-color: #823ae0;
+  /* background-color: #823ae0; */
 }
 
 .about-body {
