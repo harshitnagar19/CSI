@@ -1,39 +1,39 @@
 import AnandRajawat from './faculty/anand-rajavat-hod.svg';
 export const team = [
     {
-        name: "John Doe",
+        name: "Anshul Bajpai",
         img: AnandRajawat,
-        position: "Software Engineer",
+        position: "President",
         linkedin: "https://www.linkedin.com/in/johndoe"
     },
     {
-        name: "Jane Smith",
+        name: "Sohel Shaikh",
         img: AnandRajawat,
-        position: "UI/UX Designer",
+        position: "Vice-President",
         linkedin: "https://www.linkedin.com/in/janesmith"
     },
     {
-        name: "Mike Johnson",
+        name: "Shantanu Shewale",
         img: AnandRajawat,
-        position: "Project Manager",
+        position: "Genral Secratory",
         linkedin: "https://www.linkedin.com/in/mikejohnson"
     },
     {
-        name: "John Doe",
+        name: "Khushi Sharma",
         img: AnandRajawat,
-        position: "Software Engineer",
+        position: "Program Executive",
         linkedin: "https://www.linkedin.com/in/johndoe"
     },
     {
-        name: "Jane Smith",
+        name: "Pratham Rathore",
         img: AnandRajawat,
-        position: "UI/UX Designer",
+        position: "Technical Head",
         linkedin: "https://www.linkedin.com/in/janesmith"
     },
     {
-        name: "Mike Johnson",
+        name: "Vaishnavi Upadhyay",
         img: AnandRajawat,
-        position: "Project Manager",
+        position: "Content Head",
         linkedin: "https://www.linkedin.com/in/mikejohnson"
     },
     {
