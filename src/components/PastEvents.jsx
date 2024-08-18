@@ -46,8 +46,8 @@ export default function PastEvents() {
           gradientWidth={170}
           className="rounded-3xl"
           speed={80}
-           pauseOnHover={true}
-          // pauseOnClick={true}
+          //  pauseOnHover={true}
+          pauseOnClick={true}
           delay={0}
           play={true}
           direction="left"
@@ -74,8 +74,8 @@ export default function PastEvents() {
           gradientWidth={170}
           className="rounded-3xl"
           speed={80}
-           pauseOnHover={true}
-          // pauseOnClick={true}
+          //  pauseOnHover={true}
+          pauseOnClick={true}
           delay={0}
           play={true}
           direction="right"

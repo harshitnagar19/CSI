@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { team } from '../data/team';
-import President from '../data/team members photo/presodent.jpeg';
+import Csimembers from '../data/team members photo/csimembers.jpg';
 import { Fade } from 'react-awesome-reveal';
 export default function Team() {
   const [showAll, setShowAll] = useState(false);
@@ -54,8 +54,8 @@ export default function Team() {
           
         ) : (
           <div className='flex flex-col'>
-          <div className=' px-5 py-8 max-w-4xl max-h-xl text-white mt-12 border-4 rounded-3xl mx-auto'>
-          <img alt="error"src={President} className="w-full h-[100%] object-fit" />
+          <div className=' px-5 py-8 w-2/3 max-h-svh text-white mt-12 border-4 rounded-3xl mx-auto'>
+          <img alt="error"src={Csimembers} className="w-full h-[100%] object-fit" />
           </div>
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 mx-auto"
