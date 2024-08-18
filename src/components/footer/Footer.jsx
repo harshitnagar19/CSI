@@ -46,7 +46,7 @@ const Footer = () => {
                                 <div className="footer-social-icon">
                                     <span className="text-white text-xl font-bold">Follow us</span>
                                     <div className="mt-4 flex  space-x-4">
-                                        <RouterLink target="_blank" to="https://www.facebook.com/" className="w-10 h-10 flex items-center justify-center bg-blue-700 text-white rounded-full">
+                                        <RouterLink target="_blank" to="https://www.facebook.com/profile.php?id=100070596923812" className="w-10 h-10 flex items-center justify-center bg-blue-700 text-white rounded-full">
                                             <i className="fa fa-facebook-f"></i>
                                         </RouterLink>
                                         <RouterLink target="_blank" to="https://www.twitter.com/" className="w-10 h-10 flex items-center justify-center bg-blue-400 text-white rounded-full">
@@ -55,10 +55,10 @@ const Footer = () => {
                                         <RouterLink target="_blank" to="https://www.google.com/" className="w-10 h-10 flex items-center justify-center bg-red-600 text-white rounded-full">
                                             <i className="fa fa-google-plus"></i>
                                         </RouterLink>
-                                        <RouterLink target="_blank" to="https://www.google.com/" className="w-10 h-10 flex items-center justify-center bg-blue-600 text-white rounded-full">
+                                        <RouterLink target="_blank" to="https://www.linkedin.com/in/csi-svvv-indore-7449561b7/" className="w-10 h-10 flex items-center justify-center bg-blue-600 text-white rounded-full">
                                             <i className="fa fa-linkedin"></i>
                                         </RouterLink>
-                                        <RouterLink target="_blank" to="https://www.google.com/" className="w-10 h-10 flex items-center justify-center bg-red-600 text-white rounded-full">
+                                        <RouterLink target="_blank" to="https://www.instagram.com/csi_svvv/?hl=en" className="w-10 h-10 flex items-center justify-center bg-red-600 text-white rounded-full">
                                             <i className="fa fa-instagram"></i>
                                         </RouterLink>
                                     </div>

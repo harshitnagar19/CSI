@@ -1,11 +1,11 @@
 import React from "react";
 import clgImg from "../data/college-image.svg";
-import SectionDividerLine from "./SectionDividerLine";
+// import SectionDividerLine from "./SectionDividerLine";
 import "./aboutcollege.css"
 import { Zoom, Fade, Slide } from "react-awesome-reveal";
-import { AnimatePresence, motion } from "framer-motion";
+// import { AnimatePresence, motion } from "framer-motion";
 import { Element } from "react-scroll";
-import { cn } from "../utils/cn";
+// import { cn } from "../utils/cn";
 import { DirectionAwareHover } from "../ui/direction-aware-hover";
 export default function AboutCollege() {
   const imageUrl = clgImg;
@@ -40,10 +40,10 @@ export default function AboutCollege() {
           </Zoom>
         </div>
         <Slide triggerOnce direction="right" duration="2000" className="flex justify-center">
-          <div className="relative px-12 w-[70%] h-[50%] md:h-screen w-fit flex items-center justify-center">
+          <div className="relative px-12  h-[50%] md:h-screen w-fit flex items-center justify-center">
             <DirectionAwareHover imageUrl={imageUrl} className="h-3/4 w-fit">
-              <p className="font-bold text-xl">In the Indore</p>
-              <p className="font-normal text-sm">$1299 / night</p>
+              {/* <p className="font-bold text-xl">In the Indore</p> */}
+              {/* <p className="font-normal text-sm">$1299 / night</p> */}
             </DirectionAwareHover>
           </div>
           </Slide>
