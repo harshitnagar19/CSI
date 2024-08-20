@@ -1,8 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import { Element } from 'react-scroll';
+import "./footer.css"
+import { ToastContainer, toast } from 'react-toastify';
+import { object, string } from 'yup';
+import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
 const Footer = () => {
+    const notify = (msg) => toast.success(msg);
+    const notifyError = (msg) => toast.error(msg);
+    const [email , setEmail] = useState("");
+    const [query , setQuery] = useState("");
+
+    let validation = object({
+        email: string().email().required(),
+        query: string().required()
+      });
+
+      const handelContactUs = async()=>{
+        try{
+            await validation.validate({email ,query}); 
+            axios.post("https://sheetdb.io/api/v1/xcqq4wl98lq1y", {email,query}).then((res) => {
+                console.log('success');
+                setEmail('');
+                setQuery('');
+            });
+            notify("ThankYou to contact us , shortly our team contact to you")  
+        }
+        catch(e){
+            notifyError(e.errors[0])
+        }
+      }
     return (
         <Element name='footer'>
             <footer className="footer-section bg-black">
@@ -57,43 +86,47 @@ const Footer = () => {
                                         </RouterLink>
                                     </div>
                                 </div>
-                                <div >heelo </div>
                             </div>
-                            {/* <div className="footer-widget">Ffind
-                                <div className="footer-widget-heading mb-10">
-                                    <h3 className="text-white text-xl font-semibold">Useful Links</h3>
-                                    <div className="w-12 h-1 bg-blue-500 mt-2"></div>
-                                </div>
-                                <ul className="text-gray-400 text-sm space-y-3">
-                                    <li><a href="#" className="hover:text-blue-500">Home</a></li>
-                                    <li><a href="#" className="hover:text-blue-500">About</a></li>
-
-                                    <li><a href="#" className="hover:text-blue-500">Contact</a></li>
-                                    <li><a href="#" className="hover:text-blue-500">About us</a></li>
-                                    <li><a href="#" className="hover:text-blue-500">Our Services</a></li>
-                                    <li><a href="#" className="hover:text-blue-500">Expert Team</a></li>
-                                    <li><a href="#" className="hover:text-blue-500">Contact us</a></li>
-                                    <li><a href="#" className="hover:text-blue-500">Latest News</a></li>
-                                </ul>
-                            </div> */}
+                           
                             <div className="footer-widget border p-4 rounded-md">
                                 <div className="footer-widget-heading mb-10">
                                     <h3 className="text-white text-xl font-semibold">Contact Us</h3>
                                     <div className="w-12 h-1 bg-blue-500 mt-2"></div>
                                 </div>
-                                <div className="footer-text text-gray-400 text-sm mb-6">
+                                <div className="footer-text text-gray-400 text-sm mb-6 flex">
                                     <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                    <p className='text-transparent'>/harshit nagar and team dev/</p>
                                 </div>
                                 <div className="subscribe-form relative">
                                     <div className="relative">
-                                        <div className='pb-5'> <input type="text" placeholder="Email Address" className="w-full py-3 px-5 bg-gray-800 border border-gray-800 text-white text-sm focus:outline-none "></input></div>
-                                        <div className='pb-5'><textarea type="text" placeholder='Enter Query' className="w-full py-3 px-5 bg-gray-800 border border-gray-800 text-white text-sm focus:outline-none"></textarea></div>
+                                        <div className='pb-5'> 
+                                            <input 
+                                            type="text" 
+                                            placeholder="Email Address" 
+                                            className="w-full py-3 px-5 bg-gray-800 border border-gray-800 text-white text-sm focus:outline-none "
+                                            onChange={(e)=>{
+                                                setEmail(e.target.value)
+                                            }}
+                                            >
+                                            </input>
+                                        </div>
+                                        <div    lassName='pb-5'>
+                                            <textarea type="text" 
+                                            placeholder='Enter Query' 
+                                            className="w-full py-3 px-5 bg-gray-800 border border-gray-800 text-white text-sm focus:outline-none"
+                                            onChange={(e)=>{
+                                                setQuery(e.target.value)
+                                            }}
+                                            >
+                                            </textarea>
+                                        </div>
                                         <div>
-                                            <button className=" bg-blue-500 py-3 px-5 text-white text-xl">
-                                                <i class="fa fa-telegram transform rotate-[-6deg]" aria-hidden="true"></i>
+                                            <button className=" bg-blue-500 py-3 px-5 text-white text-xl"
+                                            onClick={handelContactUs}
+                                            >
+                                            <i class="fa fa-telegram transform rotate-[-6deg]" aria-hidden="true"></i>
                                             </button>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -104,21 +137,12 @@ const Footer = () => {
                     <div className="container mx-auto">
                         <div className="flex flex-col lg:flex-row justify-between items-center">
                             <div className="text-center lg:text-left text-gray-500 text-sm">
-                                {/* <p>Copyright &copy; 2018, All Right Reserved <span className="text-blue-500 hover:underline">harshit</span></p> */}
                             </div>
-                            {/* <div className="footer-menu mt-4 lg:mt-0">
-                                <ul className="flex space-x-4 text-gray-500 text-sm">
-                                    <li><a href="#" className="hover:text-blue-500">Home</a></li>
-                                    <li><a href="#" className="hover:text-blue-500">Terms</a></li>
-                                    <li><a href="#" className="hover:text-blue-500">Privacy</a></li>
-                                    <li><a href="#" className="hover:text-blue-500">Policy</a></li>
-                                    <li><a href="#" className="hover:text-blue-500">Contact</a></li>
-                                </ul>
-                            </div> */}
                         </div>
                     </div>
                 </div>
-            </footer>
+            </footer> 
+            <ToastContainer />
         </Element>
 
     )
