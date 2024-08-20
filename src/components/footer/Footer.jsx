@@ -16,13 +16,7 @@ const Footer = () => {
                                     <span className="text-gray-400 text-sm">SVVV, Indore </span>
                                 </div>
                             </div>
-                            {/* <div className="single-cta flex items-center">
-                                <i className="fa fa-phone text-blue-500 text-3xl"></i>
-                                <div className="cta-text pl-4">
-                                    <h4 className="text-white text-xl font-semibold mb-1">Call us</h4>
-                                    <span className="text-gray-400 text-sm">9876543210</span>
-                                </div>
-                            </div> */}
+                           
                             <div className="single-cta flex items-center">
                                 <i className="fa fa-envelope-open text-blue-500 text-3xl"></i>
                                 <div className="cta-text pl-4">
@@ -63,6 +57,7 @@ const Footer = () => {
                                         </RouterLink>
                                     </div>
                                 </div>
+                                <div >heelo </div>
                             </div>
                             {/* <div className="footer-widget">Ffind
                                 <div className="footer-widget-heading mb-10">
