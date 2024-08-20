@@ -4,6 +4,7 @@ import { HeroParallax } from "../../ui/hero-parallax";
 import "./hero.css";
 import { Navbar } from '../navbar/Navbar';
 import { Element } from 'react-scroll';
+import {  Slide } from "react-awesome-reveal";
 
 function Hero() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -18,7 +19,8 @@ function Hero() {
   };
 
   return (
-    <Element name='home'>
+    <Element name='home' >
+      
       <div
         onScroll={handleScroll}
         className={'hero-class'}
@@ -28,8 +30,15 @@ function Hero() {
 
         />
       </div>
+      <Slide trigger direction="up" duration="1000" className="flex justify-center fade">
+        
+        <h1 className='text-white text-3xl mb-8  bg-blue-700 rounded-2xl px-5 py-3 shadow-md shadow-cyan-50 overflow-hidden'>Team Experience</h1>
+      <p  className=' text-white   max-w-7xl mx-auto text-3xl overflow-hidden border-2 px-4 py-5 rounded-3xl leading-10 shadow-stone-50 shadow-lg  '>Our team enjoyed the events together, showcasing the strong bond and shared values that make CSI-SVVV more than just a community. We believe in celebrating our successes and creating memorable experiences that bring us closer as a team, developing a lifetime shared bond.
+      </p>
+      </Slide>
     </Element>
   )
+  
 }
 export const products = [
   {

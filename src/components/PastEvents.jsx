@@ -5,6 +5,7 @@ import SectionDividerLine from './SectionDividerLine';
 import Marquee from "react-fast-marquee";
 import "./pastEvent.css";
 import { Element } from "react-scroll";
+import { Fade, Slide } from "react-awesome-reveal";
 // cards
 const Card = ({ image, name, position, domain }) => (
   <div class="card w-[200px] sm:w-[250px] lg:w-[300px] aspect-[3/4] ">
@@ -20,23 +21,25 @@ export default function PastEvents() {
   return (
    <Element name="pastEvents">
      <div className=" text-white min-h-screen py-8  mx-auto">
-      <div className="px-9">
-        <h1 className="text-3xl lg:text-5xl font-mono mb-8">Past Events</h1>
+      <div className="">
+        <h1 className="text-3xl lg:text-5xl font-mono mb-8 ml-8">Past Events</h1>
 
         <div className="mb-12">
-          <h2 className="text-2xl lg:text-4xl font-mono mb-4">Kaushal</h2>
-          <p className="text-sm lg:text-xl font-mono">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-            dolorem voluptas temporibus minus ut consequuntur molestias? Ut neque,
-            architecto nulla dolor commodi doloribus a debitis, quibusdam
-            repudiandae possimus blanditiis deserunt!
+        <Slide trigger direction="right" duration="1000" className=" fade">
+        <Fade className="fade" direction="left" duration="1500">
+          <h2 className="text-2xl lg:text-4xl font-mono mb-8 text-white  w-48 bg-blue-700 rounded-2xl px-6 py-3 shadow-md shadow-cyan-50 ml-8">Kaushal</h2>
+          <p className=" font-mono text-white  max-w-7xl mx-auto text-2xl overflow-hidden border-2 px-4 py-5 rounded-3xl leading-10 shadow-stone-50 shadow-lg  ">
+          A technical event is organized by CSI-SVVV every year to help students discover their technical skills and knowledge by participating in various activities like quizzes, code & development, etc. This event is open to students who want to learn, grow, and experience something new.
           </p>
+          </Fade>
+          </Slide>
         </div>
       </div>
 
       <div className="mb-12">
-        <h2 className="text-2xl lg:text-4xl font-mono mb-4">Winners</h2>
-
+      <Slide trigger direction="left" duration="1000" className=" fade">
+        <h2 className="text-2xl lg:text-3xl font-mono  w-56 bg-blue-700 rounded-2xl px-6 py-3 shadow-md shadow-cyan-50 mb-10 ml-8">Sub Events</h2>
+</Slide>
         <Marquee
           gradient={true}
           gradientColor={"rgba(0,0,0,0.9)"}
@@ -62,7 +65,9 @@ export default function PastEvents() {
       {/* Other Events */}
 
       <div className="mb-8">
-        <h2 className="text-2xl lg:text-4xl font-mono mb-4">Other Events</h2>
+      <Slide trigger direction="left" duration="1000" className=" fade">
+        <h2 className="text-2xl lg:text-3xl font-mono ml-8 w-64 bg-blue-700 rounded-2xl px-6 py-3 shadow-md shadow-cyan-50 overflow-hidden mb-8">Other Events</h2>
+        </Slide>
         <Marquee
           gradient={true}
           gradientColor={"rgba(0,0,0,0.9)"}

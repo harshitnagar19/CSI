@@ -5,7 +5,7 @@ import {
   useScroll,
   useTransform,
   useSpring,
-  MotionValue,
+  
 } from "framer-motion";
 // import Image from "next/image";
 // import Link from "next/link";
@@ -63,7 +63,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className={`${bgClass} h-[380vh]  overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]`}
+      className={`${bgClass} h-[365vh]  overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]`}
     >
       <Header />
       <motion.div

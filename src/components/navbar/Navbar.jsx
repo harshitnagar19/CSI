@@ -5,7 +5,7 @@ import "./navbar.css";
 import { cn } from "../../utils/cn";
 import logo from "../../assets/csi_logo/logo.png";
 import { Link } from "react-scroll";
-import AboutCollege from "../AboutCollege";
+// import AboutCollege from "../AboutCollege";
 
 export function Navbar() {
   return (
@@ -53,17 +53,17 @@ function Navbarr({ className }) {
       </div>
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-4">
-          <Menu setActive={setActive}>
-            <MenuItem setActive={setActive} active={active} item="Home">
-              <div className="flex flex-col space-y-4 text-sm">
+          <Menu  className="bg-blue-700"setActive={setActive}>
+            <MenuItem  setActive={setActive} active={active} item="Home">
+              {/* <div className="flex flex-col space-y-4 text-sm">
                 <HoveredLink href="/web-dev">Web Development</HoveredLink>
                 <HoveredLink href="/interface-design">Interface Design</HoveredLink>
                 <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
                 <HoveredLink href="/branding">Branding</HoveredLink>
-              </div>
+              </div> */}
             </MenuItem>
             <MenuItem setActive={setActive} active={active} item="About">
-              <div className="text-sm grid grid-cols-2 gap-10 p-4">
+              {/* <div className="text-sm grid grid-cols-2 gap-10 p-4">
                 <ProductItem
                   title="Algochurn"
                   href=""
@@ -88,10 +88,10 @@ function Navbarr({ className }) {
                   src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
                   description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                 />
-              </div>
+              </div> */}
             </MenuItem>
             <MenuItem setActive={setActive} active={active} item="Upcoming Events">
-              <div className="text-sm grid grid-cols-2 gap-10 p-4">
+              {/* <div className="text-sm grid grid-cols-2 gap-10 p-4">
                 <ProductItem
                   title="Algochurn"
                   href=""
@@ -116,10 +116,10 @@ function Navbarr({ className }) {
                   src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
                   description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                 />
-              </div>
+              </div> */}
             </MenuItem>
             <MenuItem setActive={setActive} active={active} item="Past Events">
-              <div className="text-sm grid grid-cols-2 gap-10 p-4">
+              {/* <div className="text-sm grid grid-cols-2 gap-10 p-4">
                 <ProductItem
                   title="Algochurn"
                   href=""
@@ -144,10 +144,10 @@ function Navbarr({ className }) {
                   src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
                   description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                 />
-              </div>
+              </div> */}
             </MenuItem>
             <MenuItem setActive={setActive} active={active} item="Contact Us">
-              <div className="text-sm grid grid-cols-2 gap-10 p-4">
+              {/* <div className="text-sm grid grid-cols-2 gap-10 p-4">
                 <ProductItem
                   title="Algochurn"
                   href=""
@@ -172,7 +172,7 @@ function Navbarr({ className }) {
                   src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
                   description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
                 />
-              </div>
+              </div> */}
             </MenuItem>
           </Menu>
         </div>

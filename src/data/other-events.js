@@ -1,16 +1,19 @@
 import eventImg from './event-image.png';
+import webd from "./other events/webdev sprint pic.jpg";
+import Place from "./other events/placement pe charcha s.jpg";
+import Web from "./other events/webworkshop.jpg";
 export const otherEvents = [
     {
-        image: eventImg,
-        name: "Event 1"
+        image: webd,
+        name: "Web-dev sprint"
     },
     {
-        image: eventImg,
-        name: "Event 2"
+        image:Place,
+        name: "Placement pe Charcha"
     },
     {
-        image: eventImg,
-        name: "Event 3"
+        image: Web,
+        name: "Web Development Workshop"
     }
 ];
 

@@ -1,23 +1,49 @@
 import viceChancellor from "./faculty/vice-chancellor.svg";
+import Tech from "./sub events/Technical quiz.jpg";
+import Graphic from "./sub events/Graphic designing.jpg";
+import Project from "./sub events/project research.jpg";
+import Research from "./sub events/research.jpg";
+import Programming from "./sub events/programming contest.jpg";
+import Web from "./sub events/Web designing Contest.jpg";
+
 
 export const winners = [
     {
-        name: "John Doe",
-        domain: "web",
-        image: viceChancellor,
-        position : "First"
+        name: "Technical Quiz",
+        // domain: "web",
+        image: Tech,
+        // position : "First"
     },
     {
-        name: "Jane Smith",
-        domain: "ai",
-        image: viceChancellor,
-        position : "Runner Up"
+        name: "Web designing",
+        // domain: "ai",
+        image: Web,
+        // position : "Runner Up"
     },
     {
-        name: "John Doe",
-        domain: "blockchain",
-        image: viceChancellor,
-        position : "First"
+        name: "Programming contest",
+        // domain: "blockchain",
+        image: Programming,
+        // position : "First"
     },
+    {
+        name: "Graphic design",
+        // domain: "blockchain",
+        image: Graphic,
+        // position : "First"
+    },
+    {
+        name: "Project Contest",
+        // domain: "blockchain",
+        image: Project,
+        // position : "First"
+    },
+    {
+        name: "Research Paper Presentation",
+        // domain: "blockchain",
+        image: Research,
+        // position : "First"
+    },
+    
     
 ];
