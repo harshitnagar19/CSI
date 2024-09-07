@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Hero from './heroSection/Hero';
 import PastEvents from "./PastEvents";
 import AboutCollege from "./AboutCollege";
@@ -8,14 +8,17 @@ import { TracingBeam } from "../ui/tracing-beam";
 import Footer from "./footer/Footer";
 import { useWindowSize, } from '@react-hook/window-size'
 import Confetti from 'react-confetti'
+import KaushalCard from "./KaushalCard";
 function Home() {
-    const [width, height] = useWindowSize()
+    const [width, height] = useWindowSize();
+    const [ad , setAd] = useState(true)
+    const updateAd =(s)=>{
+        setAd(s)
+    }
     return (
-        <div  >
-
-            <div
-                className="w-full dark:bg-white bg-black  dark:bg-grid-black/[0.2] bg-grid-white/[0.2]"
-            >
+        <div className={`h-full `}>
+            {ad?<div className="w-full fixed  z-50 h-screen items-center flex justify-center"><KaushalCard prop={updateAd}  /></div>:""}
+            <div className="w-full dark:bg-white bg-black  dark:bg-grid-black/[0.2] bg-grid-white/[0.2]">
                 <Confetti
                     width={width - 100}
                     height={height}
@@ -45,6 +48,7 @@ function Home() {
                 <Footer />
             </div>
         </div>
+
     )
 }
 
