@@ -59,9 +59,9 @@ const Footer = () => {
                     <div className="footer-content  py-5">
                         <div className="grid grid-cols-1  lg:grid-cols-2 gap-8">
                             <div className="footer-widget flex flex-col ">
-                                <div className="footer-logo mb-8">
+                                <div className="footer-logo">
                                     <Link to="home">
-                                        <img src={logo} className="max-w-xs" alt="logo"></img>
+                                        <img src={logo} className="h-2/5" alt="logo"></img>
                                     </Link>
                                 </div>
                                 {/* <div className="footer-text text-gray-400 text-sm mb-6">
