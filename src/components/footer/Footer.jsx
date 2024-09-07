@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import { object, string } from 'yup';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
+import logo from "../../assets/csi_logo/logo.png";
 const Footer = () => {
     const notify = (msg) => toast.success(msg);
     const notifyError = (msg) => toast.error(msg);
@@ -60,7 +61,7 @@ const Footer = () => {
                             <div className="footer-widget flex flex-col ">
                                 <div className="footer-logo mb-8">
                                     <Link to="home">
-                                        <img src="https://scontent.fbho1-2.fna.fbcdn.net/v/t39.30808-6/306752468_3352183928438717_2219624463445094667_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=QJD7ET5mRtYQ7kNvgEtLzeU&_nc_ht=scontent.fbho1-2.fna&oh=00_AYDwbwIXdsucXvt6laYhF7IcydsLSulS2WbEh17SXM3Ong&oe=66BD5F01" className="max-w-xs" alt="logo"></img>
+                                        <img src={logo} className="max-w-xs" alt="logo"></img>
                                     </Link>
                                 </div>
                                 {/* <div className="footer-text text-gray-400 text-sm mb-6">

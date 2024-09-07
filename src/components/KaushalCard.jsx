@@ -11,7 +11,6 @@ const KaushalCard = ({ prop }) => {
                     <button className='text-red-600 bg-white px-2 py-1' onClick={() => { prop(false) }}>X</button>
                 </div>
                 <p class="card_paragraph text-xs">Best way to be success in your life.</p>
-
             </div>
             <hr class="line" />
             <ul class="card__list">
